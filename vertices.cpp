@@ -1,3 +1,6 @@
+// mail - omer7530@gmail.com
+// Author - Omer Cohen
+
 #include "vertices.hpp"
 
 Vertex::Vertex(int id): building(NO_BUILDING), id(id), owner(0){}

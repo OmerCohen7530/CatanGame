@@ -1,3 +1,6 @@
+// mail - omer7530@gmail.com
+// Author - Omer Cohen
+
 #ifndef DEVELOPMENTCARDS_HPP
 #define DEVELOPMENTCARDS_HPP
 

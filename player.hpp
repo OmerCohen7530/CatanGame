@@ -1,3 +1,6 @@
+// mail - omer7530@gmail.com
+// Author - Omer Cohen
+
 #ifndef PLAYER_HPP
 #define PLAYER_HPP
 

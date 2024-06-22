@@ -1,3 +1,6 @@
+// mail - omer7530@gmail.com
+// Author - Omer Cohen
+
 #include "catan.hpp"
 #include <iostream>
 #include <cstdlib> // std::srand, std::rand

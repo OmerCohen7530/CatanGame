@@ -1,3 +1,6 @@
+// mail - omer7530@gmail.com
+// Author - Omer Cohen
+
 #ifndef CATAN_HPP
 #define CATAN_HPP
 

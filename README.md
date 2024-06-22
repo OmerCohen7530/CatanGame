@@ -1,3 +1,6 @@
+### mail - omer7530@gmail.com
+### Author - Omer Cohen
+
 # Catan Game Implementation
 
 ## Overview

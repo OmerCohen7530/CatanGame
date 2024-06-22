@@ -1,3 +1,6 @@
+// mail - omer7530@gmail.com
+// Author - Omer Cohen
+
 #include "edge.hpp"
 
 Edge::Edge(int id):  road(NO_ROAD), id(id), owner(0){}
