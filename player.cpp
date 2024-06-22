@@ -418,22 +418,26 @@ bool Player::canBuildCity(int vertex, Board &board)
 
 void Player::addAssets(string asset)
 {
-    if(asset == "city")
+    if(asset == "city" || asset == "City")
     {
         cities++;
         settlements--;
     }
-    else if(asset == "settlement")
+    else if(asset == "settlement" || asset == "Settlement")
     {
         settlements++;
     }
-    else if(asset == "road")
+    else if(asset == "road" || asset == "Road")
     {
         roads++;
     }
-    else if(asset == "card")
+    else if(asset == "card" || asset == "Card")
     {
         cards++;
+    }
+    else
+    {
+        cout << "Invalid asset" << endl;
     }
 }
 
