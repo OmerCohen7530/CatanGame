@@ -9,8 +9,7 @@ This project is a C++ implementation of the Catan board game. It includes classe
 - Players take turns rolling dice, collecting resources, and building structures.
 - Players can build roads, settlements, and cities using resources.
 - Development cards provide various benefits, such as additional resources or actions.
-- The game tracks the largest army and longest road for bonus points.
-- The game ends when a player reaches a specified number of victory points.
+- The game ends when a player reaches 10 victory points.
 
 ## Class Hierarchy
 
@@ -29,7 +28,7 @@ This project is a C++ implementation of the Catan board game. It includes classe
 - Stores the resource type, tile number, and connected vertices.
 
 ### Edge
-- Represents an edge connecting two vertices on the game board.
+- Represents an edge connecting two vertices on the game board where road can be built.
 - Stores the road status, connected vertices, and owner.
 
 ### Vertex
@@ -44,6 +43,7 @@ This project is a C++ implementation of the Catan board game. It includes classe
 ## Libraries Used
 
 - Standard Template Library (STL): `vector`, `map`
+- Random: `cstdlib`, `ctime`
 - Input/Output: `iostream`
 
 ## Methods Description
@@ -151,4 +151,10 @@ This project is a C++ implementation of the Catan board game. It includes classe
 
 1. **Compile the Code:**
    ```sh
-   make
+   make catan
+
+## Testing 
+To run the test after cloning the repository use ```make test``` command, and then run ```./test``` and it will run the test file
+
+## Valgrind
+For checking memory leak we can compile this project by writing in the terminal ```make vlagrind```
