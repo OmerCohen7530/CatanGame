@@ -11,12 +11,15 @@ enum ResourceType { WOOD, BRICK, WHEAT, SHEEP, IRON, DESERT };
 
 class Tile {
     private:
-        int id;
-        ResourceType resource;
-        size_t number;
-        vector<int> vertices;
+        int id; // Tile ID
+        ResourceType resource; // Resource type of the tile
+        size_t number; // Tile number for resource distribution
+        vector<int> vertices; // IDs of vertices connected to the tile
     public:
+        // Constructor
         Tile(int id, ResourceType res, int num);
+
+        // Adds vertices connected to this tile
         void addVertex(int v1, int v2, int v3, int v4, int v5, int v6);
 
         // Getters

@@ -1,29 +1,154 @@
-# קטאן - מחלקות וירושה
-המתיישבים של קטאן הוא משחק קופסא ל-3 עד 4 שחקנים המשלב הן חשיבה אסטרטגית, ניהול משאבים ויכולת מסחר. מטרת המשחק היא לצבור ראשון 10 נקודות ניצחון.
-את הוראות המשחק המלא ניתן למצוא כאן: https://www.hakubia.com/wp-content/uploads/2021/01/%D7%A7%D7%98%D7%90%D7%9F.pdf.
-במטלה אתם תממשו גרסה פשוטה יותר של המשחק עבור 3 שחקנים.
-## חוקי המשחק
-המשחק מורכב מלוח המכיל 19 חלקות אדמה מוקפות בים. כל חלקת אדמה נותנת משאב כלשהו (חוץ מהמדבר). חלקות האדמה במשחק הן: יער (מניב עץ), גבעות (מניבות לבנים), אדמת מרעה (מניבה צמר), אדמה חקלאית (מניבה שיבולת), הרים (מניבים ברזל), מדבר (לא מניב כלום).
-כל חלקי המפה מקבלים מספר כלשהו בין 2 ל-12. 
-### קלפים, יישובים, ערים ומשאבים
-כל שחקן בעל משאבים (כגון שיבולת, ברזל, לבנים וכו') יכול לרכוש איתם דברים שונים במשחק כמו קלפי פיתוח, יישובים, ערים ודרכים.
-- קלף פיתוח: מחירו של קלף פיתוח הוא ברזל 1, צמר 1 ושיבולת 1. השחקן יכול לקבל אחד מ-3 סוגים שונים של קלפים: 1. קלף קידום: זהו קלף המעניק הטבה לשחקן (לאחר מכן הקלף נעלם). בין הקלפים הללו ניתן למצוא: מונופול - השחקן בוחר משאב כלשהו וכל שאר השחקנים מחוייבים להעביר לו את המשאב הזה. בניית דרכים - השחקן יכול לבנות 2 דרכים במפה ללא עלות. שנת שפע - השחקן זוכה לקבל מהבנק שני קלפים של משאבים לבחירה ולהשתמש בהם באותו התור. 2. אבירים - שחקן המחזיק ב-3 קלפים כאלה, מקבל את קלף הצבא הגדול ביותר המקנה לו 2 נקודות ניצחון (אם איבד אביר אחד, הקלף נלקח מהשחקן. שימו לב שיש בדיוק 3 קלפים כאלה!). 3. קלפי נקודות ניצחון - יש 4 קלפים שונים המעניקים נקודת ניצחון למי שמחזיק בהם.
-- בנייה: ניתן לבנות דרכים, ערים ויישובים בצורה הבאה: 1. קטע דרך: עלותו לבנים 1 ועץ 1. קטע דרך יכול להיות מחובר רק ליישוב (או עיר) בבעלות השחקן או לקטע דרך נוסף. 2. יישוב: עלות היישוב היא לבנה 1, עץ 1, צמר 1 ושיבולת 1. ניתן לבנות יישוב על צומת שאליה מובילה דרך אחת לפחות ומברחק של 2 קטעי דרך מיישוב אחר. בניית יישוב מקנה לשחקן נקודת ניצחון אחת. 3. עיר: עיר יכולה להחליף יישוב קיים. עלות הבנייה היא ברזל 3 ושיבולת 2. ברגע שמשדרגים יישוב לעיר, השחקן מאבד את הנקודה של היישוב ומקבל 2 נקודות על הבנייה. עיר מעניקה לשחקן פי-2 יותר משאבים מכל חבלי הארץ הסמוכים לה.
-- משאבים: כאמור, המשאבים מתקבלים מחבלי הארץ השונים. כאשר שחקן מטיל את קוביות המשחק, כל השחקנים מקבלים משאבים בהתאם למספר שיצא בהטלה (כלומר אם יצא 3 בהטלה, אז שחקנים עם יישובים/ערים הגובלים עם חבלי ארץ בעלי אותו מספר זוכים במשאב).
-- מסחר: שחקנים יכולים לבצע מסחר ביניהם (כלומר להחליף קלפים או משאבים) בהתאם לאיך שהם קובעים.
-### מהלך המשחק
-כל שחקן מתחיל את המשחק עם 2 יישובים ו-2 קטעי דרך המעניקים לו 2 נקודות ניצחון. בנוסף, השחקנים מקבלים משאבים התחלתיים בהתאם למקומות שבהם הם מיקמו את היישובים (משאב אחד מכל משאב אפשרי).
-סדר המשחק נקבע באופן שרירותי (לשיקולכם). בכל תור השחקנים מטילים 2 קוביות. בהתאם לתוצאת ההטלה, השחקנים מקבלים משאבים כמו שפורט מקודם.
-שחקן בתור נתון עושה את הפעולות הבאות לפי הסדר (לאחר הטלת הקוביות):
-- הוא יכול לסחור (כלומר להחליף קלפים או משאבים).
-- הוא יכול לבנות דרכים, יישובים או ערים ויכול לקנות קלפי פיתוח.
-  אם השחקן מנצל את אחד מקלפי הפיתוח שברשותו, התור אוטומטית עובר לשחקן הבא (השחקן יכול לנצל את קלף הפיתוח עוד לפני הטלת הקוביות, במקרה כזה התור עובר לשחקן הבא).
-  אם סכום ההטלה הוא 7, על כל השחקנים בעלי יותר מ-7 קלפי משאבים לבחור מחצית מהקלפים ולהחזיר אותם לערימה.
-  ### סיום המשחק
-  המשחק מסתיים בתור שבו אחד השחקנים הגיע ל-10 או יותר נקודות ניצחון. כדי לנצח במשחק, השחקן צריך שיגיע תורו ובאותו התור יהיו לו 10 נקודות לכל הפחות.
+# Catan Game Implementation
 
+## Overview
 
-שימו לב - במטלה הזאת אתם לא מקבלים קבצים לדוגמה מלבד הדמו. עליכם לחשוב לבד על הלוגיקה של המשחק ולממש את החוקים (כמובן שאתם יכולים לממש לפי ראות עיניכם אבל עם הסבר). במטלה הזאת אתם תיבחנו גם על יצירתיות. נסו לבנות את לוח המשחק בצורה שתתאים למשחק המקורי (חשבו איך לממש דבר כזה, אולי להוסיף עוד מחלקות?). כמו כן, **חובה** לצרף בדיקות יחידה למטלה הזאת. הסיבה היא פשוטה - המטלה מורכבת מאוד ואתם נדרשים לבדוק את הקוד שלכם. 
+This project is a C++ implementation of the Catan board game. It includes classes to represent the game board, players, tiles, edges, vertices, and development cards. The game allows players to take turns, build structures, and manage resources, simulating one complete round of gameplay.
 
-יש להוסיף קובץ Makefile כאשר הפקודה ``` make catan ``` מריצה את התוכנית הראשית שלכם (המדגימה סיבוב אחד במשחק). עליכם להגיש קובץ ```README``` המסביר את המימוש שלכם (כלומר מהם חוקי המשחק שהגדרתם), ההיררכיה של המחלקות ובאילו ספריות השתמשתם. עליכם גם לתאר את כל השיטות שכתבתם, ולכתוב תוכנית ```main``` המריצה סיבוב תקין של המשחק. כמו כן, עליכם לכתוב בתחילת כל קובץ את המייל שלכם. אי עמידה בהנחיות תגרור הפחתה בציון. 
-בהצלחה!
+## Game Rules
+
+- Players take turns rolling dice, collecting resources, and building structures.
+- Players can build roads, settlements, and cities using resources.
+- Development cards provide various benefits, such as additional resources or actions.
+- The game tracks the largest army and longest road for bonus points.
+- The game ends when a player reaches a specified number of victory points.
+
+## Class Hierarchy
+
+### Board
+- Manages the tiles, edges, and vertices of the game board.
+- Keeps track of player turns and the position of the robber.
+- Methods to build settlements, roads, cities, share resources, and check victory points.
+
+### Player
+- Represents a player in the game.
+- Manages player resources, cities, settlements, roads, and development cards.
+- Methods to add resources, check victory, roll dice, place buildings, trade resources, and use development cards.
+
+### Tile
+- Represents a hexagonal tile on the game board.
+- Stores the resource type, tile number, and connected vertices.
+
+### Edge
+- Represents an edge connecting two vertices on the game board.
+- Stores the road status, connected vertices, and owner.
+
+### Vertex
+- Represents a vertex where settlements or cities can be built.
+- Stores the building type, owner, and connected edges.
+
+### DevelopmentCards
+- Manages the development cards owned by a player.
+- Stores counts of each type of development card.
+- Methods to add and remove cards, and check card counts.
+
+## Libraries Used
+
+- Standard Template Library (STL): `vector`, `map`
+- Input/Output: `iostream`
+
+## Methods Description
+
+### Board Methods
+- `Board(Player& p1, Player& p2, Player& p3)`: Constructor initializing the board with players.
+- `void initialize()`: Initializes the board with tiles, edges, and vertices.
+- `void buildSettlement(int vertex, Player &player)`: Builds a settlement at the specified vertex.
+- `void buildRoad(int edge, Player &player)`: Builds a road at the specified edge.
+- `void buildCity(int vertex, Player &player)`: Builds a city at the specified vertex.
+- `void shareResources(size_t dices)`: Distributes resources based on the dice roll.
+- `void reduceHalfResourcesFromPlayers()`: Reduces resources of all players by half.
+- `void monopolyAction(size_t res, Player &player)`: Executes a monopoly action.
+- `void chechVictoryPoints()`: Checks if any player has won the game.
+- `void finishGame()`: Ends the game.
+- `std::vector<Tile>& getTiles()`: Gets the tiles on the board.
+- `Edge& getEdge(int id)`: Gets an edge by ID.
+- `Vertex& getVertex(int id)`: Gets a vertex by ID.
+- `Player& getPlayer(int id)`: Gets a player by ID.
+- `int getPlayerTurn() const`: Gets the current player's turn.
+- `int getRobber() const`: Gets the current position of the robber.
+- `void nextTurn()`: Advances to the next player's turn.
+- `void setRobber(int position)`: Sets the robber's position.
+
+### Player Methods
+- `Player(int id, string name)`: Constructor initializing a player with ID and name.
+- `Player(Player &player)`: Copy constructor.
+- `void addResource(ResourceType res, int amount)`: Adds resources to the player.
+- `bool checkVictory()`: Checks if the player has won.
+- `void rollDices(Board &board)`: Rolls dice and collects resources.
+- `void initSettlements_Roads(int settlements, int roads, Board &board)`: Initializes settlements and roads.
+- `void status()`: Displays player status.
+- `size_t getVictoryPoints()`: Gets the player's total victory points.
+- `int placeSettlement(int vertex, Board &board)`: Places a settlement.
+- `int placeRoad(int edge, Board &board)`: Places a road.
+- `int placeCity(int vertex, Board &board)`: Places a city.
+- `bool canBuildSettlement(int vertex, Board &board)`: Checks if a settlement can be built.
+- `bool canBuildRoad(int edge, Board &board)`: Checks if a road can be built.
+- `bool canBuildCity(int vertex, Board &board)`: Checks if a city can be built.
+- `void addAssets(string asset)`: Adds assets.
+- `void tradeFromto(ResourceType from, ResourceType to, Board &board)`: Trades resources.
+- `size_t countResources()`: Counts total resources.
+- `void endTurn(Board &board)`: Ends the player's turn.
+- `void buyDevCard(Board &board)`: Buys a development card.
+- `void useDevCard(string card, Board &board)`: Uses a development card.
+- `void help_Road_Building_Card(Board &board)`: Helps with road building.
+
+### Tile Methods
+- `Tile(int id, ResourceType res, int num)`: Constructor initializing a tile.
+- `void addVertex(int v1, int v2, int v3, int v4, int v5, int v6)`: Adds vertices to the tile.
+- `size_t getNumber() const`: Gets the tile number.
+- `ResourceType getResource() const`: Gets the resource type.
+- `vector<int> getVertices() const`: Gets the vertices.
+- `int getId() const`: Gets the tile ID.
+
+### Edge Methods
+- `Edge(int id)`: Constructor initializing an edge.
+- `void buildRoad(int player)`: Builds a road for a player.
+- `void addVertices(int vertex1, int vertex2)`: Adds vertices to the edge.
+- `Road getRoad() const`: Gets the road status.
+- `int getId() const`: Gets the edge ID.
+- `int getOwner() const`: Gets the owner.
+- `vector<int> getVertices() const`: Gets the vertices.
+- `void setOwner(int player)`: Sets the owner.
+
+### Vertex Methods
+- `Vertex(int id)`: Constructor initializing a vertex.
+- `void build(int player, Building type)`: Builds a structure on the vertex.
+- `void addEdges(int vertex, int vertex2, int vertex3 = -1)`: Adds edges to the vertex.
+- `Building getBuilding() const`: Gets the building type.
+- `int getId() const`: Gets the vertex ID.
+- `int getOwner() const`: Gets the owner.
+- `vector<int>& getEdges()`: Gets the edges.
+- `void setOwner(int player)`: Sets the owner.
+- `void setBuilding(Building type)`: Sets the building type.
+
+### DevelopmentCards Methods
+- `DevelopmentCards()`: Constructor initializing development cards.
+- `void buyCard()`: Buys a development card.
+- `void addKnight()`: Adds a knight card.
+- `void addVictoryPoint()`: Adds a victory point card.
+- `void addRoadBuilding()`: Adds a road building card.
+- `void addYearOfPlenty()`: Adds a year of plenty card.
+- `void addMonopoly()`: Adds a monopoly card.
+- `void addOpenKnight()`: Adds an open knight card.
+- `void removeKnight()`: Removes a knight card.
+- `void removeVictoryPoint()`: Removes a victory point card.
+- `void removeRoadBuilding()`: Removes a road building card.
+- `void removeYearOfPlenty()`: Removes a year of plenty card.
+- `void removeMonopoly()`: Removes a monopoly card.
+- `void removeOpenKnight()`: Removes an open knight card.
+- `void setBiggestArmy(bool biggestArmy)`: Sets the biggest army status.
+- `size_t getKnight() const`: Gets the knight card count.
+- `size_t getVictoryPoint() const`: Gets the victory point card count.
+- `size_t getRoadBuilding() const`: Gets the road building card count.
+- `size_t getYearOfPlenty() const`: Gets the year of plenty card count.
+- `size_t getMonopoly() const`: Gets the monopoly card count.
+- `size_t getOpenKnight() const`: Gets the open knight card count.
+- `bool getBiggestArmy() const`: Gets the biggest army status.
+- `size_t countCards() const`: Counts the total number of cards.
+- `void status() const`: Displays the status of development cards.
+- `size_t getPoints() const`: Gets the total points from the cards.
+
+## How to Run
+
+1. **Compile the Code:**
+   ```sh
+   make

@@ -6,17 +6,23 @@
 #include <iostream>
 using namespace std;
 
-enum Road{ROAD, NO_ROAD};
+enum Road { ROAD, NO_ROAD };
+
 class Edge {
     private:
-        Road road;
-        int id;
-        int owner;
-        vector<int> vertices;
-        
+        Road road; // Type of road on the edge
+        int id; // Edge ID
+        int owner; // ID of the player owning the edge
+        vector<int> vertices; // IDs of vertices connected to the edge
+
     public:
+        // Constructor
         Edge(int id);
+
+        // Builds a road for a player
         void buildRoad(int player);
+
+        // Adds vertices connected to this edge
         void addVertices(int vertex1, int vertex2);
 
         // Getters

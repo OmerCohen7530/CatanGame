@@ -7,13 +7,13 @@
 
 class Catan {
     private:
-        Board board;
+        Board board; // The game board
     public:
+        // Constructor
+        Catan(Player& p1, Player& p2, Player& p3);
 
-    Catan(Player& p1, Player& p2, Player& p3);
-
-    // Getters
-    Board& getBoard();
+        // Getters
+        Board& getBoard();
 };
 
 #endif // CATAN_HPP
