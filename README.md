@@ -149,9 +149,8 @@ This project is a C++ implementation of the Catan board game. It includes classe
 
 ## How to Run
 
-1. **Compile the Code:**
-   ```sh
-   make catan
+## Run the game
+To run the game after cloning the repository use ```make catan``` command
 
 ## Testing 
 To run the test after cloning the repository use ```make test``` command, and then run ```./test``` and it will run the test file
